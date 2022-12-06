@@ -1,0 +1,111 @@
+.promo
+    padding-bottom: 56px
+    &__wrapper
+        position: relative
+        display: flex
+        padding-top: 72px
+.h2
+    &-title
+        font-family: 'Open Sans'
+        font-style: normal
+        font-weight: 700
+        font-size: 36px
+        line-height: 49px
+        color: $black-color
+        margin-top: 118px
+        margin-right: 89px
+.img
+    &__grass
+        position: absolute
+        &_first
+            left: 50%
+            bottom: 0
+            transform: translateX(-50%)
+        &_second
+            width: 220px
+            right: 0
+            top: 50%
+            transform: translateY(-50%)
+            height: 200px
+        &_third
+            width: 220px
+            left: 60%
+            top: 0
+            transform: translateX(-50%)
+            height: 200px
+.main
+    &-slider
+        width: 610px
+        position: relative
+        height: 520px
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 610px
+            height: 4px
+            background: $progress-color
+            z-index: -1
+        &__wrapper
+            display: flex
+            overflow-y: auto
+            height: 520px
+            
+        &__item
+            display: flex
+            justify-content: center
+            position: relative
+            >img
+                height: 480px
+        &__counter
+            display: flex
+            position: absolute
+            top: 50px
+            left: -30px
+            font-style: normal
+            font-weight: 600
+            font-size: 18px
+            line-height: 27px
+            text-align: center
+            color: $gray-color
+        &__dot
+            width: 15px
+            height: 15px
+        &__pagination
+            bottom: 50%
+            transform: translateY(-50%)
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+//main slider swiper
+.main-slider__dot.swiper-pagination-bullet.swiper-pagination-bullet-active
+    background: $progress-color
+.main-slider__dot.swiper-pagination-bullet
+    background: $gray-color
+    opacity: 1
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction
+    left: auto
+    width: auto
+    right: 0
+    bottom: 125px
+.main-slider__dot.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
+    margin-bottom: 40px
+.main-slider__dot.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:nth-last-child(1)
+    margin-bottom: 0px
+.main-slider__item.swiper-slide.swiper-slide-visible.swiper-slide-active::after
+    content: ''
+    display: block
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 0px
+    max-width: 610px
+    height: 4px
+    background: $blue-color
+    z-index: 1050
+    animation: 5.3s load
+    
+
+//main slider swiper
