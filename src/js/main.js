@@ -7,10 +7,10 @@ window.addEventListener('DOMContentLoaded', () => {
         direction: 'horizontal',
         loop: true,
         watchSlidesProgress: true,
-        // autoplay: {
-        //     delay: 5000,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
         // If we need pagination
         pagination: {
           el: '.main-slider__pagination',
@@ -47,10 +47,10 @@ window.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 2,
         slidesPerGroup: 1,
         watchSlidesProgress: true,
-        // autoplay: {
-        //     delay: 5000,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
         
         // Navigation arrows
         pagination: {
